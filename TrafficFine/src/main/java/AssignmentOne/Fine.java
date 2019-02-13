@@ -9,7 +9,9 @@ public class Fine {
     public Fine(String licenseNumber, String vehicle, double fineAmount) {
         this.licenseNumber = licenseNumber;
         this.vehicle = vehicle;
-        this.fineAmount = fineAmount;
+        if(fineAmount < 0)
+            throw new IllegalArgumentException("Err");
+           this.fineAmount = fineAmount;
     }
 
     public Fine() {
