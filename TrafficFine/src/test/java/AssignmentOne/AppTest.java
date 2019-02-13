@@ -26,5 +26,9 @@ public class AppTest
         Assert.assertThat(fine.getFineAmount(), equalTo(500.00));
     }
 
-
+     @Test(expected = IllegalArgumentException.class)
+    public void negativeBalanceTest(){
+        Fine trafficFine = new Fine("CA123465", "Toyota", -250.00
+        );
+    }
 }
