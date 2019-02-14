@@ -2,6 +2,7 @@ package AssignmentOne;
 
 
 import javax.swing.*;
+import java.awt.*;
 
 /**
  * Hello world!
@@ -15,7 +16,11 @@ public class App
         // System.out.println( "Hello World!" );
         GUI frame = new GUI();
         frame.setVisible(true);
-        frame.setSize(400, 200);
+
+        //Allows the frame to be centered
+        frame.setLocationRelativeTo(null);
+
+        frame.setSize(550, 250);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
     }
